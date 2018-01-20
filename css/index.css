@@ -1,0 +1,236 @@
+body{
+	font-size: 12px;
+	background-color: #F5F5F5;
+}
+header{
+	width: 100%;
+	height: 13.77rem;
+	background-image: url('../img/screen.png'),linear-gradient(#3FC0FF,#93F0FB);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 545870 */
+  src: url('https://at.alicdn.com/t/font_545870_ucr9amvy2satt9.eot');
+  src: url('https://at.alicdn.com/t/font_545870_ucr9amvy2satt9.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_545870_ucr9amvy2satt9.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_545870_ucr9amvy2satt9.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_545870_ucr9amvy2satt9.svg#iconfont') format('svg');
+}
+.dingwei{
+	font-family: iconfont;
+}
+.now_city_box{
+	font-size: .39rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1.6rem;
+}
+.now_air_box{
+	width: 2.1rem;
+	height: 1.26rem;
+	background-color: #F1AB62;
+	border-radius: .2rem;
+	margin-left: .27rem;
+	padding-top: .2rem;
+}
+.now_air_box span{
+	display: block;/* 竖排 */
+	text-align: center;
+	color: #fff;
+}
+.now_temp{
+	font-size: 1.3rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	margin-top: .52rem;
+	padding-left: .5rem;
+}
+.now_weather{
+	font-size: .58rem;
+	color: #fff;
+	text-align: center;
+	font-weight:bold;
+	margin-top:.39rem;
+}
+.now_wind_box{
+	font-size: .37rem;
+	color: #fff;
+	text-align: center;
+	margin-top:.34rem;
+}
+.prompt{
+	font-size:.42rem;
+	color: #fff;
+	text-align: center;
+	margin-top:1.32rem;
+}
+.next{
+	width: 100%;
+	height: 2.9rem;
+    background-color: #fff;
+	border-bottom: .03rem solid #E4E4E4;
+	padding: .72rem 0;
+}
+.next_box{
+	width: 50%;
+	height: 100%;
+	
+	float: left;
+	/* 横排 */
+	padding:0 .58rem;
+	
+}
+.next_box1{
+	border-right: .03rem solid #E4E4E4;
+}
+.next_date,.tody_weather{
+	float: left;
+}
+.next_temp,.today_img,.tomorrow_img{
+	float:right;
+}
+.next_top,.next_bottom{
+	overflow: hidden;
+}
+.today_img,.tomorrow_img{
+	width: .78rem;
+	height: .78rem;
+}
+.next_bottom{
+	margin-top: .36rem;
+}
+.hours{
+	width: 100%;
+	height: 3.9rem;
+	background-color: #fff;
+	margin-top: .27rem;
+	border-bottom: .03rem solid #e4e4e4;
+	border-top: .03rem solid #e4e4e4;
+	overflow: hidden;
+	padding: .88rem 0;
+}
+.hours_content{
+	height: 100%;
+	
+	display: flex;
+	overflow: auto;
+}
+.hours_content li{
+	width: 2rem;
+	height: 100%;
+	padding: 0 .6rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: center;
+
+}
+.hours_img{
+	width: .58rem;
+	height: .58rem;
+}
+.date{
+	width: 100%;
+	height: 11.24rem;
+	background-color: #fff;
+	margin-top: .27rem;
+	border-bottom: .03rem solid #e4e4e4;
+	border-top: .03rem solid #e4e4e4;
+	overflow: hidden;/* 超出部分隐藏 */
+	padding: .88rem 0;
+
+}
+.date_content{
+	height: 100%;
+	
+	display: flex;
+	overflow-x: auto;/* 横向滚动 */
+}
+.date_content li{
+	width: 2.2rem;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: center;
+	
+}
+.date_img{
+	width: .72rem;
+	height: .72rem;
+}
+.change_img{
+	width: .58rem;
+	height: .58rem;
+}
+.date_content li span{
+	width: 2rem;
+	text-align: center;
+	display: block;
+}
+/* .date_weather,.date_temp_max,.date_wind_level,.date_temp_min{
+	padding: 0 .4rem;
+} */
+.citys{
+	width: 100vw;
+	height: 100vh;
+	background-color: #f6f6f6;
+	position: fixed;           /* 多个重叠在一起 */
+	top: 0;
+	left: 0;
+	display: none;
+}
+.search_box{
+	width: 100%;
+	height: 1.28rem;
+	background-color: #fff;
+	padding: 0 .3rem;
+	display: flex;      /* 弹性布局 */
+	flex-wrap: wrap;     /* 允许跳行 */
+	justify-content: space-between;   /* 两端对齐 */
+	align-items: center;    /* 垂直单行对齐 */
+}
+.search{
+	width: 9rem;
+	height: .87rem;
+	background-color: #e2e2e2;
+	border: 0;
+	padding-left: .3rem;
+	border-radius:.1rem; 
+}
+.confirm{
+	font-size:.5rem;
+	color: #76a9ff;
+}
+.citys_box{
+	width: 100%;
+	height: 90vh;
+	padding: 0 .3rem;
+}
+.citys_title,.citys_title1{
+	font-size: .5rem;
+	color: #999;
+	line-height: .84rem;
+}
+.citys_list li{
+	width: 2.93rem;
+	height: .84rem;
+	background-color: #fff;
+	font-size: .44rem;
+	text-align: center;
+	line-height: .84rem;
+	border : .03rem solid #e0e0e0;
+	border-radius: .1rem;
+	float: left;
+	margin-bottom: .4rem;
+	margin-right: .4rem;
+}
+::-webkit-scrollbar{
+	height: 0;
+}
+.citys_box section{
+	overflow: hidden;
+}
